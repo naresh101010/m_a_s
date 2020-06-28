@@ -1,0 +1,48 @@
+
+var data = {
+  "shared": {
+      "API_ENDPOINT":"http://9fd1f2f0-default-ingressbf-ed49-977150202.ap-south-1.elb.amazonaws.com/userbff/",
+      "API_ENDPOINT_AUTH":"http://9fd1f2f0-default-ingressbf-ed49-977150202.ap-south-1.elb.amazonaws.com/authbff/",
+      "API_ENDPOINT_K8": "",
+      "branchCode": "B1",
+      "journeyId": "A1",
+      "userId": "",
+      "defaultBranchcode": ""
+    },
+  "user" : {
+      "API_ENDPOINT":"http://9fd1f2f0-default-ingressbf-ed49-977150202.ap-south-1.elb.amazonaws.com/userbff/",
+      "API_ENDPOINT_AUTH":"http://9fd1f2f0-default-ingressbf-ed49-977150202.ap-south-1.elb.amazonaws.com/authbff/",
+      "API_ENDPOINT_K8": "",
+      "branchCode": "B1",
+      "journeyId": "A1",
+      "userId": "",
+      "defaultBranchcode": ""
+    },
+    "credit_contract" : {
+      "API_ENDPOINT":"http://9fd1f2f0-default-ingressbf-ed49-977150202.ap-south-1.elb.amazonaws.com/ccbff/",
+      "API_ENDPOINT_K8": "",
+      "branchCode": "B1",
+      "journeyId": "A1",
+      "userId": "",
+      "defaultBranchcode": ""
+    },
+    "mdm" : {      
+      "geoApiUrl": "http://9fd1f2f0-default-ingressbf-ed49-977150202.ap-south-1.elb.amazonaws.com/geobff/secure/",
+      "zoneApiUrl": "http://9fd1f2f0-default-ingressbf-ed49-977150202.ap-south-1.elb.amazonaws.com/mdmzone/secure/",
+      "lookupNotepadApiUrl": "http://9fd1f2f0-default-ingressbf-ed49-977150202.ap-south-1.elb.amazonaws.com/mdmcmdbff/secure/",
+      "commandmentApiUrl": "http://9fd1f2f0-default-ingressbf-ed49-977150202.ap-south-1.elb.amazonaws.com/cmdbff/secure/",
+      "branchApiUrl": "http://9fd1f2f0-default-ingressbf-ed49-977150202.ap-south-1.elb.amazonaws.com/branchbff/secure/",
+      "pricingParameterapiUrl": "http://9fd1f2f0-default-ingressbf-ed49-977150202.ap-south-1.elb.amazonaws.com/cmdbff/secure/"
+    },
+    "prc" : {      
+      "API_ENDPOINT": "http://9fd1f2f0-default-ingressbf-ed49-977150202.ap-south-1.elb.amazonaws.com/prcbff/",
+    },    
+    "retail_contract" : {      
+      "API_ENDPOINT": "http://9fd1f2f0-default-ingressbf-ed49-977150202.ap-south-1.elb.amazonaws.com/retlbff/",
+    },
+    "associate_booking": {
+      "API_ENDPOINT": "http://9fd1f2f0-default-ingressbf-ed49-977150202.ap-south-1.elb.amazonaws.com/assocbbff/"
+    }  
+ 
+    
+};

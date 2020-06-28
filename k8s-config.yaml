@@ -1,0 +1,66 @@
+apiVersion: apps/v1    
+kind: Deployment    
+metadata:    
+  name: micro-frontend-main1    
+  labels:    
+    app: micro-frontend-main1 
+spec:    
+  replicas: 2    
+  selector:    
+    matchLabels:    
+      app: micro-frontend-main1 
+  strategy:    
+    rollingUpdate:    
+      maxSurge: 25%    
+      maxUnavailable: 25%    
+    type: RollingUpdate    
+  template:    
+    metadata:    
+      labels:    
+        app: micro-frontend-main1   
+    spec:    
+      containers:    
+      - image: 183454673550.dkr.ecr.ap-south-1.amazonaws.com/micro-frontend-main1:stage_BUILDNUMBER   
+        imagePullPolicy: Always    
+        name: micro-frontend-main1  
+        ports:    
+        - containerPort: 80    
+          protocol: TCP    
+      imagePullSecrets:    
+      - name: aws-ecr  
+       
+       
+--- 
+apiVersion: networking.istio.io/v1alpha3   
+kind: Gateway   
+metadata:   
+  name: micro-frontend-main1
+spec:   
+  selector:   
+    istio: pvt-ingressgateway # use istio default controller   
+  servers:   
+  - port:   
+      number: 80   
+      name: http   
+      protocol: HTTP   
+    hosts:   
+    - "*"   
+     
+--- 
+apiVersion: networking.istio.io/v1alpha3   
+kind: VirtualService   
+metadata:   
+  name: micro-frontend-main1
+spec:   
+  hosts:   
+  - "*"   
+  gateways:   
+  - micro-frontend-main1  
+  http:   
+  - match:   
+    route:   
+    - destination:   
+        host: micro-frontend-main1
+        port:   
+          number: 80 
+

@@ -1,0 +1,13 @@
+{
+    "imports": {    
+        "user-management": "http://9fd1f2f0-default-usermodul-f474-1015832455.ap-south-1.elb.amazonaws.com/main.js",  
+        "contract": "http://9fd1f2f0-default-creditcon-1f37-1287388083.ap-south-1.elb.amazonaws.com/main.js",              
+        "shared": "http://9fd1f2f0-default-microfron-3460-1741576031.ap-south-1.elb.amazonaws.com/main.js",   
+        "prc-contract": "http://9fd1f2f0-default-prccontra-eb30-1981373416.ap-south-1.elb.amazonaws.com/main.js",  
+        "mdm": "http://9fd1f2f0-default-mdmui-4a17-747400407.ap-south-1.elb.amazonaws.com/main-es5.js",                
+        "retail-contract":"http://9fd1f2f0-default-retailcon-03e0-850323767.ap-south-1.elb.amazonaws.com/main.js",              
+        "single-spa": "https://cdnjs.cloudflare.com/ajax/libs/single-spa/4.3.5/system/single-spa.min.js",
+        "asso_booking-contract":"http://9fd1f2f0-default-bookingas-7b0e-1462229114.ap-south-1.elb.amazonaws.com/main.js",
+        "asso_network-contract":"http://9fd1f2f0-default-assoccntr-643c-272540903.ap-south-1.elb.amazonaws.com/main.js"
+    }
+}
